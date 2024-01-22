@@ -47,7 +47,7 @@ items3.forEach((el) => {
     }
 })
 
-//* Appear film card
+//* Film card scale
 let filmCards = Array.from(document.getElementsByClassName("total-card"));
 let info = Array.from(document.getElementsByClassName("info-card"));
 
@@ -82,11 +82,11 @@ function scrollHandler() {
     })
 }
 
-window.addEventListener('resize', scrollHandler);
-window.addEventListener('scroll', scrollHandler);
 
 /* Call the scroll handler function at first load to 
-show elements that is already in the viewport */
+show elements that is already in the viewport / at resize viewport and on scroll */
+window.addEventListener('resize', scrollHandler);
+window.addEventListener('scroll', scrollHandler);
 scrollHandler();
 
 
